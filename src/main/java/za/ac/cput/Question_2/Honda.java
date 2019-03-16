@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.Question_2;
 
 public class Honda{
     String model;

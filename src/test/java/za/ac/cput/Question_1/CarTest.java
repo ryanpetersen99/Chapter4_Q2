@@ -1,7 +1,6 @@
-package za.ac.cput;
+package za.ac.cput.Question_1;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -17,9 +16,10 @@ public class CarTest
     @Test
     public void Test()
     {
-        Honda honda = new Honda();
-        honda.setMethod(5,120,"Honda");
-        assertNotEquals("The car model is Honda",honda.toString());
+        Honda honda = new Honda(0,0,"null");
+        assertEquals(120,honda.getSpeed());
+        assertEquals(5,honda.getGears());
+        assertEquals("Honda",honda.getModel());
 
     }
 }
